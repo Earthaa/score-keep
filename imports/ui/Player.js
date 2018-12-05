@@ -2,13 +2,15 @@ import {Players} from './../api/players';
 import React from 'react';
 export default class Player extends React.Component{
     render(){
+        let myrank = this.props.player.rank;
+        let itemClassName = 'item item--position-'+myrank;
         return(
-            <div key={this.props.player._id} className="item">
+            <div key={this.props.player._id} className={itemClassName}>
                 <div className="player">
                     <div>
                         <h3 className="player__name">{this.props.player.name} </h3>
                         <p className="player__stats">
-                            {this.props.player.rank} {this.props.player.position} {this.props.player.score} point(s)
+                            {this.props.player.position} place - {this.props.player.score} point(s)
                         </p> 
                     </div>
                     <div className="player__actions">

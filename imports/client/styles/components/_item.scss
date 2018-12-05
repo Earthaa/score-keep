@@ -4,6 +4,19 @@
     margin-bottom: 1.3rem;
     padding: 1.3rem;
 }
+
+.item--position-1{
+    background:$green;
+    border-color: $green_alt;
+}
+.item--position-2{
+    background:$blue;
+    border-color: $blue_alt;
+}
+.item--position-3{
+    background: $red;
+    border-color: $red_alt;
+}
 .item__message{
     font-size: 1.3rem;
     font-style: italic;
